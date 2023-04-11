@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Importar Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <title>PhoneCity - Contacto</title>
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">PhoneCity</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Celulares </a>
+                </li>
+                <!--aca deberia ir un filtro levantando solo los accesorios-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accesorios </a>
+                </li>
+                <!--aca deberia ir un filtro levantando por marca-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Por Marca
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#productosSection">Samsung</a></li>
+                        <li><a class="dropdown-item" href="#productosSection">Iphone</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#productosSection">Mostrar todos</a></li>
+                    </ul>
+                </li>
+            </ul>
+         
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+
+        </div>
+    </div>
+</nav>
+
+  <!-- Main -->
+  <main class="container my-5">
+    <h2 class="text-center mb-5">Bienvenidos a PhoneCity</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>En PhoneCity somos una tienda online especializada en tecnología. Ofrecemos una amplia variedad de productos como celulares, tabletas y accesorios de las mejores marcas del mercado. Además, contamos con precios competitivos y un excelente servicio al cliente.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="Productos de PhoneCity">
+      </div>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <section class="my-5">
+      <h3 class="text-center mb-5">Formulario de Contacto</h3>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+ 
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>Nosotros</h6>
+          <p class="text-justify">Aquí encontrarás todo lo que necesitas para estar siempre conectado con la última tecnología móvil.
+            Somos una tienda especializada en celulares y accesorios Samsung e iPhone, 
+            ofreciendo la más amplia gama de productos para todos los gustos y presupuestos. 
+            Desde los modelos más recientes hasta los clásicos favoritos, contamos con un amplio catálogo de productos para satisfacer todas tus necesidades. 
+            Nuestro equipo de expertos está siempre a tu disposición para asesorarte y guiarte en tu compra. ¡Gracias por confiar en nosotros!</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categorias</h6>
+          <ul class="footer-links">
+            <li><a href="#">Samsung</a></li>
+            <li><a href="#">Iphone</a></li>
+            <li><a href="#">Celulares</a></li>
+            <li><a href="#">Auriculares</a></li>
+            <li><a href="#">Tables</a></li>
+            <li><a href="#">Relojes</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Enlaces Rápidos
+        </h6>
+          <ul class="footer-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">&copy; Todos los derechos reservado PhoneCity
+       <a href="#"></a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>   
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>   
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>   
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+  <!-- Importar scripts de Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<script src="./js/administrarProductos.js"></script>
+
+<script src="./js/app.js"></script>
+
+
+
+</body>
+</html>
