@@ -1,178 +1,55 @@
-/* imports */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap");
-/* fin de imports */
+
 
 /* reset de pagina */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-/* fin de reset */
-
-/* root (paleta de colores)*/
+/*paleta de colores*/
 :root {
-  --blanco: white;
-  --negro: black;
-  --primario: #e55224;
-  --secundario: #d86542;
-  --terciario: #24262b;
+  --blanco: rgba(250, 246, 246, 0.922);
+  --negro:#23192d;
+  --primario:#fd0a54;
+  --secundario:#f57576;
+  --terciario: #8f6043;
 }
-/* fin del root (paleta de colores)*/
 
 /* body/html */
 html,
 body {
-  background: white;
-}
-/* fin del body/html */
-
-.navbar {
-  background-color: rgb(255, 117, 117);
+  background: var(--blanco);
 }
 
-.btn1 {
-  background-color: green;
-  padding: 3px;
-  border: 1px solid black;
-  color: white;
+.main-text{
+  font-size: 100%;
+  color: var(--terciario);
 }
 
-.btn2 {
-  background-color: red;
-  padding: 3px;
-  border: 1px solid black;
-  color: white;
-}
-
-::selection {
-  background-color: white;
-  color: #e74f1d;
-}
-/* heder nav*/
-
-.links {
+.card-custom{
   display: flex;
-  justify-content: end;
-}
-.leftContent {
-  display: flex;
+  justify-content: center;
   text-align: center;
-  align-items: center;
+  border-radius: 1rem;
+}
+.card-info{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
-.navbar-brand {
-  font-size: 30px;
-  color: white;
-  margin-left: 30px;
-  font-weight: bold;
-  z-index: 10;
-}
-.navbar-brand:hover {
-  color: #e74f1d;
-  z-index: 10;
-}
-
-#navbarText {
-  font-size: 18px;
-  color: var(--primario);
-  margin-right: 30px;
-}
-.nav-item:active {
-  color: white;
-}
-.nav-link:hover {
-  color: #e74f1d;
-}
-.nav-link {
-  color: white;
-  font-size: 20px;
-  z-index: 10;
+.card-text{
+  margin: 0.3rem;
+  color: var(--terciario);
 }
 .navbar {
-  background-color: transparent !important;
-  z-index: 10;
-}
-.navbar-nav {
-  z-index: 10;
-}
-.nav-item {
-  font-size: 35px;
-  z-index: 10;
-}
-.custom-class {
-  background-color: #ffffff;
+  background-color: var(--secundario);
 }
 
-.card-title {
-  color: black;
-  font-family: "Oswald", sans-serif;
-  padding-bottom: 20px;
-}
-.card-text {
-  color: black;
-  font-family: "Oswald", sans-serif;
-  font-weight: 100;
+.btn{
+  background-color: var(--secundario);
 }
 
-.texthero {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 70px;
-}
-.heroContainer {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.btnVaciar {
-  padding-left: 125px;
-}
-
-.swal2-popup {
-  font-size: 10px; 
-  padding: 1px; 
-}
-
-header {
-  text-align: center;
-  background-image: linear-gradient(390deg, #ffffff2a, rgba(0, 0, 0, 0.812)),
-    url("../img/hombre-vaping-cigarrillo-electronico.jpg");
-  width: auto;
-  height: 80vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: center;
-  background-attachment: fixed;
-}
-
-.texthero {
-  color: white;
-  width: 100%;
-}
-
-.texthero div {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-}
-.texthero p {
-  width: 60%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-}
 
 .site-footer {
   margin-top: 0px;

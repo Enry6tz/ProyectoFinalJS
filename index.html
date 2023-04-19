@@ -32,11 +32,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/contacto.html">Celulares </a>
                         </li>
-                        <!--aca deberia ir un filtro levantando solo los accesorios-->
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/faqs.html">Accesorios </a>
                         </li>
-                        <!--aca deberia ir un filtro levantando solo los accesorios-->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -61,24 +59,17 @@
                 </div>
             </div>
         </nav>
-        <section class="texthero">
-            <h1 class="heroTitle">Bienvenido a PhoneCity!</h1>
-            <div class="heroContainer">
-                <p>
-                  ¡Bienvenidos a PhoneCity!
-                  Aquí encontrarás todo lo que necesitas para estar siempre conectado con la última tecnología móvil.
-                  Somos una tienda especializada en celulares y accesorios Samsung e iPhone, 
-                  ofreciendo la más amplia gama de productos para todos los gustos y presupuestos. 
-                  Desde los modelos más recientes hasta los clásicos favoritos, contamos con un amplio catálogo de productos para satisfacer todas tus necesidades. 
-                  Nuestro equipo de expertos está siempre a tu disposición para asesorarte y guiarte en tu compra. ¡Gracias por confiar en nosotros!
-                </p>
-                <div class="heroBtn">
-                    <a href="/index.html">
-                       <button type="button" class="btn btn-success">Mostrar Productos</button>
-                    </a>
-                </div>
+        <main class="container my-5">
+            <h2 class="text-center mb-5">Bienvenidos a PhoneCity</h2>
+            <div class="row">
+              <div class="col-md-6 main-text">
+                <p>En PhoneCity somos una tienda online especializada en tecnología. Ofrecemos una amplia variedad de productos como celulares, tabletas y accesorios de las mejores marcas del mercado. Además, contamos con precios competitivos y un excelente servicio al cliente.</p>
+              </div>
+              <div class="col-md-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oY9qKzEvIaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              
             </div>
-
         </section>
     </header>
 
@@ -86,14 +77,7 @@
         <h1 class="text-center mt-5 mb-5" id="productosSection" ></h1>
         <section class="container d-flex flex-wrap justify-content-center gap-5" id="contenedor_productos">
             <!--CARD BOOTSTRAP-->
-            <!--div class="card" style="width: 18rem;">
-                <img src="" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text"></p>
-                    <a href="#" class="btn btn-primary"></a>
-                </div>
-            </div-->
+
         </section>
          <section class="fixed">
        
@@ -132,26 +116,16 @@
                 <div class="divPrecio">
                     <p>Precio: <span id="precio">$0</span></p>
                     <p>Precio con IVA: <span id="precio_con_iva">$0</span></p>
-                    <div class="whatsappModal">
-                        <a href="#"
-                            target="_blank"><img src="./img/whatsapp (1).png" alt="logo de WhatsApp"></a>
-                            
-                    </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Seguir Comprando</button> 
                     <button type="button" class="btn btn-danger" id="finalizar_compra">Finalizar Compra</button>
+                    
                     
                 </div>
             </div>
         </div>
     </div>
     </main>
-    <section class="fixed">
-        <div>
-            <a href="#"
-                target="_blank"><img src="./img/whatsapp (1).png" alt="logo de WhatsApp"></a>
-        </div>
-    </section>
     
     <footer class="site-footer">
         <div class="container">
@@ -164,29 +138,27 @@
                 Desde los modelos más recientes hasta los clásicos favoritos, contamos con un amplio catálogo de productos para satisfacer todas tus necesidades. 
                 Nuestro equipo de expertos está siempre a tu disposición para asesorarte y guiarte en tu compra. ¡Gracias por confiar en nosotros!</p>
             </div>
-  
-            <div class="col-xs-6 col-md-3">
-              <h6>Categorias</h6>
-              <ul class="footer-links">
-                <li><a href="#">Samsung</a></li>
-                <li><a href="#">Iphone</a></li>
-                <li><a href="#">Celulares</a></li>
-                <li><a href="#">Auriculares</a></li>
-                <li><a href="#">Tables</a></li>
-                <li><a href="#">Relojes</a></li>
-              </ul>
-            </div>
-
-            <div class="col-xs-6 col-md-3">
-              <h6>Enlaces Rápidos
-            </h6>
-              <ul class="footer-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-              </ul>
+            <section class="my-5">
+                <h3 class="text-center mb-5">Formulario de Contacto</h3>
+                <form action="#" method="POST">
+                  <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </section>
+            </main>
             </div>
           </div>
-          <hr>
         </div>
         <div class="container">
           <div class="row">

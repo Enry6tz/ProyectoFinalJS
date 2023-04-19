@@ -12,29 +12,109 @@ class ProductoController {
       }
      
     }
-  
-    mostrarEnDOM(contenedor_productos) {
-      //limpio el dom
-      contenedor_productos.innerHTML = "";
+    mostrarEnDOM(productos) {
+      productos.innerHTML = "";
       //muestra  la lista completa
       this.listaProductos.forEach((producto) => {
-        contenedor_productos.innerHTML += `
-              <div class="card" style="width: 18rem;">
-                  <img src="${producto.img}" class="card-img-top" alt="${producto.alt}">
-                  <div class="card-body">
-                      <h5 class="card-title">${producto.nombre}</h5>
-                      <p class="card-text">
-                          ${producto.descripcion}
-                      </p>
-                      <p class="card-text">
-                          $${producto.precio}
-                      </p>
-                      <a href="#" class="btn btn-primary" id="vaper${producto.id}">Añadir al carrito</a>
-                  </div>
-              </div>
+        productos.innerHTML += `
+        <div class="card card-custom" style="width: 18rem;">
+          <img src="${producto.img}" class="card-img-top card-img" alt="${producto.alt}">
+          <div class="card-body">
+            <h5 class="card-title">${producto.nombre}</h5>
+            <p class="card-text">${producto.descripcion}</p>
+            <div class="card-info">
+              <p class= "card-text">$${producto.precio}</p>
+              <p class= "card-text">stock: ${producto.stock}</p>
+            </div>
+            <a href="#" class="btn btn-primary" id="${producto.id}">Añadir al carrito</a>
+          </div>
+        </div>
               `;
       });
     }
+    mostrarSamsung(productos) {
+      productos.innerHTML = "";
+      this.listaProductos.forEach((producto) => {
+        productos.innerHTML += `
+        <div class="card card-custom" style="width: 18rem;">
+          <img src="${producto.img}" class="card-img-top card-img" alt="${producto.alt}">
+          <div class="card-body">
+            <h5 class="card-title">${producto.nombre}</h5>
+            <p class="card-text">${producto.descripcion}</p>
+            <div class="card-info">
+              <p class= "card-text">$${producto.precio}</p>
+              <p class= "card-text">stock: ${producto.stock}</p>
+            </div>
+            <a href="#" class="btn btn-primary" id="${producto.id}">Añadir al carrito</a>
+          </div>
+        </div>
+              `;
+      });
+    }
+    mostrarIphone(productos) {
+      productos.innerHTML = "";
+      //muestra  la lista completa
+
+      this.listaProductos.forEach((producto) => {
+        productos.innerHTML += `
+        <div class="card card-custom" style="width: 18rem;">
+          <img src="${producto.img}" class="card-img-top card-img" alt="${producto.alt}">
+          <div class="card-body">
+            <h5 class="card-title">${producto.nombre}</h5>
+            <p class="card-text">${producto.descripcion}</p>
+            <div class="card-info">
+              <p class= "card-text">$${producto.precio}</p>
+              <p class= "card-text">stock: ${producto.stock}</p>
+            </div>
+            <a href="#" class="btn btn-primary" id="${producto.id}">Añadir al carrito</a>
+          </div>
+        </div>
+              `;
+      });
+    }
+    mostrarAccesorios(productos) {
+      productos.innerHTML = "";
+      //muestra  la lista completa
+      
+      this.listaProductos.forEach((producto) => {
+        productos.innerHTML += `
+        <div class="card card-custom" style="width: 18rem;">
+          <img src="${producto.img}" class="card-img-top card-img" alt="${producto.alt}">
+          <div class="card-body">
+            <h5 class="card-title">${producto.nombre}</h5>
+            <p class="card-text">${producto.descripcion}</p>
+            <div class="card-info">
+              <p class= "card-text">$${producto.precio}</p>
+              <p class= "card-text">stock: ${producto.stock}</p>
+            </div>
+            <a href="#" class="btn btn-primary" id="${producto.id}">Añadir al carrito</a>
+          </div>
+        </div>
+              `;
+      });
+    }
+    mostrarCelulares(productos) {
+      productos.innerHTML = "";
+      //muestra  la lista completa
+      this.listaProductos.forEach((producto) => {
+        productos.innerHTML += `
+        <div class="card card-custom" style="width: 18rem;">
+          <img src="${producto.img}" class="card-img-top card-img" alt="${producto.alt}">
+          <div class="card-body">
+            <h5 class="card-title">${producto.nombre}</h5>
+            <p class="card-text">${producto.descripcion}</p>
+            <div class="card-info">
+              <p class= "card-text">$${producto.precio}</p>
+              <p class= "card-text">stock: ${producto.stock}</p>
+            </div>
+            <a href="#" class="btn btn-primary" id="${producto.id}">Añadir al carrito</a>
+          </div>
+        </div>
+              `;
+      });
+    }
+    
+
   }
   
   class CarritoController {
@@ -75,11 +155,12 @@ class ProductoController {
       localStorage.setItem("listaCarrito", arrFormatoJSON);
     }
   
-    mostrarEnDOM(contenedor_carrito) {
+    mostrarEnDOM(contenedor_carrito ) {
       //limpio el container
       contenedor_carrito.innerHTML = "";
       //muestro todo
-      this.listaCarrito.forEach((producto) => {
+      this.listaCarrito.forEach((producto ) => {
+        if (producto.marca == marca)
         contenedor_carrito.innerHTML += `
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
@@ -182,10 +263,10 @@ class ProductoController {
   }
   
   //APP JS
-  controladorProductos.mostrarEnDOM(contenedor_productos);
+  controladorProductos.mostrarSamsung(contenedor_productos);
   controladorCarrito.mostrarEnDOM(contenedor_carrito);
   
-  //Añadimos Eventos a los botones de cada CARD
+  //Añadimos Eventos a los botones de cada CARD cacacacacaacacca
   
   controladorProductos.listaProductos.forEach((producto) => {
     const productoEnDOM = document.getElementById(`vaper${producto.id}`);
